@@ -1,5 +1,17 @@
 .container {
-  padding: 0 2rem;
+  background: url("https://source.unsplash.com/random");
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  max-width: 1200px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .main {
@@ -7,25 +19,8 @@
   padding: 4rem 0;
   flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .title a {
@@ -41,76 +36,85 @@
 
 .title {
   margin: 0;
-  line-height: 1.15;
   font-size: 4rem;
 }
 
 .title,
 .description {
-  text-align: center;
+  text-align: left;
 }
 
 .description {
-  margin: 4rem 0;
+  margin: 1rem 0;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.search {
+  width: 100%;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+.searchButton:hover {
+  border: 1px solid #ddd;
+  color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(255, 255, 255, 0.7);
+  background: transparent;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+.searchButton {
+  font-size: 15px;
+  padding: 8 px 16 px 10 px;
+  margin-bottom: 24px;
+  border: 1px solid #ddd;
+  color: rgba(0, 0, 0, 0.9);
+  border-color: rgba(255, 255, 255, 0.7);
+  background: #fff;
+  outline: 0;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1 px solid transparent;
+  white-space: nowrap;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  padding: 9px 18px;
+  font-size: 15px;
+  line-height: 1.6;
+  border-radius: 6px;
+}
+
+.searchInput {
+  width: 100%;
+  border: none;
+  outline: 0;
+  padding: 6px 12px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 6px;
+  line-height: 1.6;
+  color: #111;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.url {
+  margin-top: 30px;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  border: 2px dotted rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  display: block;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.url:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
